@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>PhishAware Security Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>PhishAware Security Lab</h1>
+
+    <p>
+      This is an authorized cybersecurity
+      awareness demonstration.
+    </p>
+
+    <div class="panel">
+        <h2>Simulation Login</h2>
+
+        <form id="demoForm">
+            <input type="text"
+                   placeholder="Demo username"
+                   autocomplete="off">
+
+            <input type="password"
+                   placeholder="Dummy password"
+                   autocomplete="off">
+
+            <button type="submit">
+                Test Login
+            </button>
+        </form>
+
+        <p id="result"></p>
+    </div>
+
+    <div class="panel">
+        <h2>Camera Permission Test</h2>
+
+        <p>
+          Camera access is optional and requires
+          your browser permission.
+        </p>
+
+        <button id="cameraButton">
+            Request Camera Permission
+        </button>
+
+        <video id="preview"
+               autoplay
+               playsinline
+               muted></video>
+
+        <button id="stopButton">
+            Stop Camera
+        </button>
+    </div>
+
+    <p id="activity">
+      Simulation ready.
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
